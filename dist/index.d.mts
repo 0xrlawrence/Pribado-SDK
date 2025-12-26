@@ -114,6 +114,10 @@ interface SignMessageResult {
     v?: number;
     r?: string;
     s?: string;
+    /** New rotated proxy key ID (CRITICAL: User must save this) */
+    newProxyKeyId?: string;
+    /** The address that signed the message */
+    signerAddress?: string;
     /** Error message if failed */
     error?: string;
 }

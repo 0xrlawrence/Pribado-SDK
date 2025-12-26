@@ -44,13 +44,13 @@ Proxy Key ID + Password → Verify → Decrypt → Return Seed + New Rotated Key
 ### Installation
 
 ```bash
-npm install @pribado/seed-proxy-sdk ethers
+npm install pribado-seed-proxy-sdk ethers
 ```
 
 ### Basic Integration
 
 ```typescript
-import { createSeedProxyClient } from '@pribado/seed-proxy-sdk';
+import { createSeedProxyClient } from 'pribado-seed-proxy-sdk';
 
 // Initialize with your Pribado instance URL
 const client = createSeedProxyClient({
@@ -108,7 +108,7 @@ async function loginWithProxyKey(proxyKeyId: string, password: string) {
 
 ```html
 <script type="module">
-  import { createSeedProxyClient } from 'https://cdn.jsdelivr.net/npm/@pribado/seed-proxy-sdk/dist/index.mjs';
+  import { createSeedProxyClient } from 'https://cdn.jsdelivr.net/npm/pribado-seed-proxy-sdk/dist/index.mjs';
   
   const client = createSeedProxyClient({
     baseUrl: 'https://your-pribado-instance.com'
@@ -138,7 +138,7 @@ async function loginWithProxyKey(proxyKeyId: string, password: string) {
 ### With Wallet Connection (ethers.js)
 
 ```typescript
-import { createSeedProxyClient, SAPPHIRE_MAINNET_CHAIN_ID } from '@pribado/seed-proxy-sdk';
+import { createSeedProxyClient, SAPPHIRE_MAINNET_CHAIN_ID } from 'pribado-seed-proxy-sdk';
 import { ethers } from 'ethers';
 
 const client = createSeedProxyClient({
@@ -459,7 +459,7 @@ const result = await client.authenticate({ proxyKeyId, password });
 ### 4. Handle Errors Gracefully
 
 ```typescript
-import { SeedProxyError, SeedProxyErrorCode } from '@pribado/seed-proxy-sdk';
+import { SeedProxyError, SeedProxyErrorCode } from 'pribado-seed-proxy-sdk';
 
 try {
   await client.authenticate({ proxyKeyId, password });

@@ -1,5 +1,5 @@
 {
-    "name": "@pribado/seed-proxy-sdk",
+    "name": "pribado-seed-proxy-sdk",
     "version": "2.0.0",
     "description": "Zero-Knowledge Key Bridge SDK: Securely manage Web3 seed phrases and private keys with client-side encryption and Oasis Sapphire TEEs.",
     "main": "./dist/index.js",

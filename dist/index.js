@@ -634,7 +634,9 @@ var SeedProxyClient = class {
         signature,
         v: sig.v,
         r: sig.r,
-        s: sig.s
+        s: sig.s,
+        newProxyKeyId: authResult.newProxyKeyId,
+        signerAddress: wallet.address
       };
     } catch (error) {
       if (error instanceof SeedProxyError) throw error;

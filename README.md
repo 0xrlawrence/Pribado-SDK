@@ -3,7 +3,7 @@
 **Zero-Knowledge Key Bridge SDK**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![npm version](https://img.shields.io/npm/v/@pribado/seed-proxy-sdk.svg)](https://www.npmjs.com/package/@pribado/seed-proxy-sdk)
+[![npm version](https://img.shields.io/npm/v/pribado-seed-proxy-sdk.svg)](https://www.npmjs.com/package/pribado-seed-proxy-sdk)
 
 > Securely manage Web3 seed phrases and private keys with client-side encryption and Oasis Sapphire TEEs.
 
@@ -44,11 +44,11 @@ The Pribado Seed Proxy SDK allows any wallet or application to create secure, en
 ## Installation
 
 ```bash
-npm install @pribado/seed-proxy-sdk
+npm install pribado-seed-proxy-sdk
 # or
-yarn add @pribado/seed-proxy-sdk
+yarn add pribado-seed-proxy-sdk
 # or
-pnpm add @pribado/seed-proxy-sdk
+pnpm add pribado-seed-proxy-sdk
 ```
 
 ---
@@ -58,7 +58,7 @@ pnpm add @pribado/seed-proxy-sdk
 ### Register a Seed Phrase
 
 ```typescript
-import { createSeedProxyClient } from '@pribado/seed-proxy-sdk';
+import { createSeedProxyClient } from 'pribado-seed-proxy-sdk';
 
 const client = createSeedProxyClient({
   baseUrl: 'https://your-pribado-instance.com',

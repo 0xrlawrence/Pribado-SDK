@@ -14,7 +14,7 @@ import {
     AuthenticateResult,
     SignMessageParams,
     SignMessageResult
-} from '@pribado/seed-proxy-sdk';
+} from 'pribado-seed-proxy-sdk';
 
 interface UsePribadoOptions {
     baseUrl: string;
