@@ -258,7 +258,7 @@ if (result.success) {
 
 ## Storage Types
 
-### L2S (Layer 2 Storage)
+### L2S (Locally encrypted before sending to Server)
 - **Off-chain** encrypted storage
 - **No gas fees** for registration or rotation
 - **Fast** operations
