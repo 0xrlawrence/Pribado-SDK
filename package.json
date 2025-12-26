@@ -1,7 +1,7 @@
 {
     "name": "@pribado/seed-proxy-sdk",
     "version": "2.0.0",
-    "description": "Pribado Seed Proxy SDK - Secure encrypted endpoints for Web3 wallets (Seed Phrases & Private Keys)",
+    "description": "Zero-Knowledge Key Bridge SDK: Securely manage Web3 seed phrases and private keys with client-side encryption and Oasis Sapphire TEEs.",
     "main": "./dist/index.js",
     "module": "./dist/index.mjs",
     "types": "./dist/index.d.ts",

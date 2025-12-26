@@ -1,11 +1,11 @@
 # Pribado Seed Proxy SDK
 
-**Client-Side Zero-Knowledge Key Bridge for Web3 Wallets**
+**Zero-Knowledge Key Bridge SDK**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![npm version](https://img.shields.io/npm/v/@pribado/seed-proxy-sdk.svg)](https://www.npmjs.com/package/@pribado/seed-proxy-sdk)
 
-> Secure encrypted endpoints for Web3 wallets on Oasis Sapphire
+> Securely manage Web3 seed phrases and private keys with client-side encryption and Oasis Sapphire TEEs.
 
 The Pribado Seed Proxy SDK allows any wallet or application to create secure, encrypted endpoints for seed phrase and private key management. Your secrets are encrypted client-side and stored securely on Oasis Sapphire TEE or off-chain (L2S), accessible only with your password.
 
