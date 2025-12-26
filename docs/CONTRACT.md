@@ -285,16 +285,17 @@ event VaultDeactivated(uint256 indexed vaultIndex);
 pragma solidity ^0.8.20;
 
 /**
- * @title KeyBridgeV8
- * @notice Privacy-first Key Proxy - Fixed return type for Sapphire
+ * @title KeyBridgeV9
+ * @notice Privacy-first Key Proxy - Supports Seed Phrases & Private Keys
  * 
- * Stores seed as 12 bytes32 words to avoid string return issues
+ * Stores secrets as encrypted chunks securely on Oasis Sapphire TEE.
  */
-contract KeyBridgeV8 {
+contract KeyBridgeV9 {
     
     struct Vault {
-        bytes32[12] encryptedWords;  // 12 words max (standard BIP39)
-        uint8 wordCount;              // Actual word count
+        bytes32[12] encryptedWords;  // 12 words for seed, or encrypted private key chunks
+        uint8 wordCount;              // Number of encrypted chunks
+        uint8 keyType;                // 0 = seed phrase, 1 = private key (NEW in V9)
         bytes32 encryptionKey;
         bytes32 currentKeyHash;
         bytes32 label;
@@ -310,7 +311,7 @@ contract KeyBridgeV8 {
     Vault[] private allVaults;
     mapping(bytes32 => uint256[]) private ownerVaultIndices;
     
-    uint8 public constant VERSION = 8;
+    uint8 public constant VERSION = 9;
     
     event VaultCreated(bytes32 indexed ownerHash, uint256 vaultIndex, uint64 timestamp);
     event KeyRotated(uint256 indexed vaultIndex, uint64 timestamp);

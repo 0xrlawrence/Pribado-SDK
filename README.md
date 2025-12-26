@@ -276,7 +276,7 @@ if (result.success) {
 
 ## Oasis Sapphire Network
 
-**Live Contract:** [`0x9B4aA4B40995bD93256E26706A12535851C4FD95`](https://explorer.oasis.io/mainnet/sapphire/address/0x9B4aA4B40995bD93256E26706A12535851C4FD95)
+**Live Contract:** [`0xabE5D482AceFED95E0D37dA89bC63F941f02f9A0`](https://explorer.oasis.io/mainnet/sapphire/address/0xabE5D482AceFED95E0D37dA89bC63F941f02f9A0)
 
 | Network | Chain ID | RPC URL |
 |---------|----------|---------|
@@ -285,6 +285,17 @@ if (result.success) {
 ```typescript
 import { SAPPHIRE_MAINNET_CHAIN_ID } from '@pribado/seed-proxy-sdk';
 // SAPPHIRE_MAINNET_CHAIN_ID = 23294
+```
+
+### Configuration
+
+The SDK connects to the official KeyBridge contract by default:
+
+```typescript
+import { CONTRACT_ADDRESS } from 'pribado-seed-proxy-sdk';
+
+console.log(CONTRACT_ADDRESS); 
+// 0xabE5D482AceFED95E0D37dA89bC63F941f02f9A0
 ```
 
 ---
