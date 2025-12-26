@@ -1,0 +1,51 @@
+{
+    "name": "@pribado/seed-proxy-sdk",
+    "version": "2.0.0",
+    "description": "Pribado Seed Proxy SDK - Secure encrypted endpoints for Web3 wallets (Seed Phrases & Private Keys)",
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsup src/index.ts --format cjs,esm --dts",
+        "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+        "test": "vitest run",
+        "clean": "rm -rf dist node_modules"
+    },
+    "dependencies": {
+        "ethers": "^6.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3",
+        "vitest": "^1.1.0"
+    },
+    "peerDependencies": {
+        "ethers": "^6.0.0"
+    },
+    "keywords": [
+        "web3",
+        "pribado",
+        "seed-proxy",
+        "wallet",
+        "encryption",
+        "privacy",
+        "oasis",
+        "sapphire",
+        "l2s",
+        "tee"
+    ],
+    "author": "Ralph Lawrence Pecayo",
+    "license": "MIT",
+    "homepage": "https://pribado.dev"
+}
