@@ -258,7 +258,7 @@ if (result.success) {
 
 ## Storage Types
 
-### L2S (Locally encrypted before sending to Server)
+### L2S (Local To Server - Locally encrypted before sending to your private vault)
 - **Off-chain** encrypted storage
 - **No gas fees** for registration or rotation
 - **Fast** operations
